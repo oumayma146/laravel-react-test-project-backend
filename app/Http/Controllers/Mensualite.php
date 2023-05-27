@@ -14,7 +14,6 @@ class Mensualite extends Controller
     $capital= $request->get('capital');
     $taux_interet_menseul=round(pow(1 + ($taux_interet_annuel / 100), 1/12) - 1, 3);
     $mensualite=round(($capital * $taux_interet_menseul * pow(1 + $taux_interet_menseul, $duree)) / (pow(1 + $taux_interet_menseul, $duree) - 1), 2);
-  
     $mensualites = new ModelsMensualite();
     $mensualites->duree = $duree;
     $mensualites->capital = $capital;
