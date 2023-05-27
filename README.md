@@ -22,19 +22,19 @@ cp .env.example .env
 
 set database credentials (DB_DATABASE=test, DB_USERNAME=root, DB_PASSWORD=)
 
-4/Install PHP dependencies
+6/Install PHP dependencies
 
 composer install
 
-5/Generate key
+7/Generate key
 
 php artisan key:generate
 
-6/Run migration
+8/Run migration
 
 php artisan migrate
 
-7/Run server
+9/Run server
 
 php artisan serve
 
