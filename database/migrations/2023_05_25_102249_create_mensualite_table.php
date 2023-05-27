@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->integer('duree');
             $table->integer('capital');
-            $table->float('taux_interet_annuel');
-            $table->float('taux_interet_menseul');
-            $table->float('mensualite');
+            $table->double('taux_interet_annuel');
+            $table->double('taux_interet_menseul');
+            $table->double('mensualite');
             $table->timestamps();
         });
     }
