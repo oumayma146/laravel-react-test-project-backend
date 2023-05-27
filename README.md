@@ -12,8 +12,15 @@ git clone https://github.com/oumayma146/test_backend_softt365.git
 
 cd test_backend_softt365
 
-3/Create database tset 
-go to mysql server and create a new database name tset 
+3/Copy .env.example file to .env file
+
+cp .env.example .env
+
+4/Create database test (you can change database name)
+
+5/Go to .env file
+
+set database credentials (DB_DATABASE=test, DB_USERNAME=root, DB_PASSWORD=)
 
 4/Install PHP dependencies
 
